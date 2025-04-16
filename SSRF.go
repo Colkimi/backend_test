@@ -12,6 +12,7 @@ import (
 	"strings"
 )
 
+//main function
 func main() {
 	fmt.Println("SSRF & Backend Vulnerability Testing Tool (Educational Use Only)")
 	fmt.Println("1. Test for basic SSRF")
@@ -35,6 +36,7 @@ func main() {
 	}
 }
 
+//SSRF test
 func testBasicSSRF() {
 	fmt.Println("\nBasic SSRF Testing")
 	fmt.Print("Enter target URL with parameter to test (e.g., http://example.com/image?url=): ")
