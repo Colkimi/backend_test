@@ -129,6 +129,7 @@ func testInternalPortScan() {
 	// Common internal ports to test
 	ports := []string{"22", "80", "443", "3306", "5432", "6379", "8080", "9000"}
 
+	//loop to test [prts according to input
 	for _, port := range ports {
 		payload := "http://127.0.0.1:" + port
 		testURL := targetURL + url.QueryEscape(payload)
