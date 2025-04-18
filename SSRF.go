@@ -24,6 +24,7 @@ func main() {
 	option, _ := reader.ReadString('\n')
 	option = strings.TrimSpace(option)
 
+	//start loop to test vulns
 	switch option {
 	case "1":
 		testBasicSSRF()
